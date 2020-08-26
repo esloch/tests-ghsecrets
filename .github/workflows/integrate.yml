@@ -23,6 +23,6 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Print key secrets
-        env: # Or as an environment variable
-          CLIENT_ACCOUNT_ID: ${{ secrets.CLIENT_ACCOUNT_ID }}
+      env: # Or as an environment variable
+        CLIENT_ACCOUNT_ID: ${{ secrets.CLIENT_ACCOUNT_ID }}
       run: make print_key
