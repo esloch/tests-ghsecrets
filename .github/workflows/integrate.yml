@@ -24,6 +24,5 @@ jobs:
 
     - name: Print key secrets
         env: # Or as an environment variable
-        super_secret: |
-            ${{ secrets.CLIENT_ACCOUNT_ID }}
+        CLIENT_ACCOUNT_ID: ${{ secrets.CLIENT_ACCOUNT_ID }}
       run: make print_key
