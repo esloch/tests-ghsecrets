@@ -11,8 +11,8 @@ def read(filename):
 
 
 setup(
-    name="tests-ghsecrets",
-    version="1.1",
+    name="Testworkflow",
+    version="0.1.1",
     author="esloch",
     author_email="es.loch@gmail.com",
     description="Testando os secrets",
