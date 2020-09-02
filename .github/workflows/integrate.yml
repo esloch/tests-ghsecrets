@@ -25,7 +25,7 @@ jobs:
       with:
         auto-update-conda: true
         python-version: ${{ matrix.python-version }}
-        activate-environment: my-en
+        activate-environment: my-env
         environment-file: environment-3.7.yml
         channels: conda-forge
   
@@ -33,6 +33,11 @@ jobs:
       shell: bash -l {0}
       run: |
         cp env_sample .env
+
+    - name: Install dependencies
+      shell: bash -l {0}
+      run: |
+        make install
 
     - name: Print key secrets
       shell: bash -l {0}
