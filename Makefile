@@ -15,6 +15,3 @@ clean:
 	rm -rf build
 	rm -rf dist
 	rm -rf *.egg-info
-
-print_key:
-	python print_secrets.py

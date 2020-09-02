@@ -49,6 +49,6 @@ jobs:
         ACESSO_TOKEN: ${{ secrets.ACESSO_TOKEN }}
         REFRESCA_TOKEN: ${{ secrets.REFRESCA_TOKEN }}
       run: |
-        make print_key
         make configure_environ
+        cat _mycreds.txt
         make list_dir
