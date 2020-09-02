@@ -18,8 +18,8 @@ if not os.path.exists(SETTINGS_PATH):
     settings_yaml = {
         "client_config_backend": "settings",
         "client_config": {
-           'client_id': os.getenv('CLIENT_ID'),
-            'client_secret': os.getenv('CLIENT_SECRETS'),
+           'client_id': os.getenv('CLIENTE_ID'),
+            'client_secret': os.getenv('CLIENTE_SECRETS'),
         },
         "save_credentials": True,
         "save_credentials_backend": "file",
