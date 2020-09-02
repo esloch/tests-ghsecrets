@@ -1,0 +1,9 @@
+.env
+.ipynb_checkpoints/
+*.cfg
+_mycreds.txt
+client_secrets.json
+geekfile.txt
+reset_files.sh
+*.yaml
+*.egg-info/

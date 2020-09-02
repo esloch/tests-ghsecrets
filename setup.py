@@ -11,8 +11,8 @@ def read(filename):
 
 
 setup(
-    name="tests-ghsecrets",
-    version="1.1",
+    name="Testworkflow",
+    version="0.1.1",
     author="esloch",
     author_email="es.loch@gmail.com",
     description="Testando os secrets",
@@ -25,6 +25,6 @@ setup(
         "License :: OSI Approved :: GPL V3 License",
         "Operating System :: Linux",
     ],
-    python_requires='>=3.7',
+    python_requires=">=3.7",
     install_requires=read("requirements.txt"),
 )
