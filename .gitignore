@@ -1,0 +1,9 @@
+.env
+.ipynb_checkpoints/
+.isort.cfg
+.pre-commit-config.yaml
+_mycreds.txt
+client_secrets.json
+geekfile.txt
+reset_files.sh
+settings.yaml

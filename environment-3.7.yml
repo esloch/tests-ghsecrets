@@ -20,3 +20,4 @@ dependencies:
     - pytest==6.0.1
     - python-dotenv==0.14.0
     - responses==0.11.0
+    - PyYAML
