@@ -42,13 +42,13 @@ jobs:
     - name: Print key secrets
       shell: bash -l {0}
       env:
-        CLIENT_ACCOUNT_ID: ${{ secrets.CLIENT_ACCOUNT_ID }}
-        CLIENTE_SECRET: ${{ secrets.CLIENTE_SECRETS }}
+        CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         CLIENTE_ID: ${{ secrets.CLIENTE_ID }}
         PROJETO_ID: ${{ secrets.PROJETO_ID }}
         ACESSO_TOKEN: ${{ secrets.ACESSO_TOKEN }}
         REFRESCA_TOKEN: ${{ secrets.REFRESCA_TOKEN }}
       run: |
         make configure_environ
+        cat .env
         cat _mycreds.txt
         make list_dir

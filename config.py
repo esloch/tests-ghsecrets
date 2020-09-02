@@ -19,7 +19,7 @@ if not os.path.exists(SETTINGS_PATH):
         "client_config_backend": "settings",
         "client_config": {
            'client_id': os.getenv('CLIENTE_ID'),
-            'client_secret': os.getenv('CLIENTE_SECRETS'),
+            'client_secret': os.getenv('CLIENT_SECRET'),
         },
         "save_credentials": True,
         "save_credentials_backend": "file",
@@ -61,7 +61,7 @@ if not os.path.exists(MYCREDS_PATH):
     mycreds_info = {
         "access_token": os.getenv("ACESSO_TOKEN"),
         "client_id": os.getenv("CLIENTE_ID"),
-        "client_secret": os.getenv("CLIENTE_SECRETS"),
+        "client_secret": os.getenv("CLIENT_SECRET"),
         "refresh_token": os.getenv("REFRESCA_TOKEN"),
         "token_expiry": "2020-12-31T23:36:20Z",
         "token_uri": "https://oauth2.googleapis.com/token",

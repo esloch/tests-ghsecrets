@@ -2,7 +2,7 @@
 
 
 # CLIENT_SECRETS = '*'
-sed -i -e "s|^CLIENTE_SECRETS=.*$|CLIENTE_SECRETS=$CLIENTE_SECRETS|g" .env
+sed -i -e "s|^CLIENT_SECRET=.*$|CLIENT_SECRET=$CLIENT_SECRET|g" .env
 # CLIENT_ID='*'
 sed -i -e "s|^CLIENTE_ID=.*$|CLIENTE_ID=$CLIENTE_ID|g" .env
 # PROJECT_ID='*'
