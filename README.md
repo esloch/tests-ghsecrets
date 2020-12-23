@@ -1,7 +1,7 @@
 # About the Infodengue project
 <p>
 
-#### *InfoDengue is an alert system for arboviruses based on hybrid data generated through the integrated analysis of data mined from the social Web and climatic and epidemiological data.*
+*InfoDengue: a nowcasting system for the surveillance of dengue fever transmission.*
 [more](https://info.dengue.mat.br/informacoes/)...
 <br/>
 
@@ -33,21 +33,14 @@ $ sudo apt-get install build-essential git make wget \
 ```sh
 $ git clone https://github.com/AlertaDengue/AlertaDengue.git
 ```
-### Download and restore database from Dataverse:
-*Download and save datafiles in /Data/docker/dev_dumps/*
-```sh
-$ cd Data/
-$ make download_demodb
-```
-[source code](https://info.dengue.mat.br/informacoes/)...
+### Clone the data repository and restore the database:
+*The data is randomly inserted into the database for testing and development of the AlertDengue project.*
+[source code](https://github.com/AlertaDengue/Data/blob/master/README.md)...
 
 ### Configure and deploy AlertaDengue:
 ```sh
+$ cd
 $ make install
 $ make sync_mapfiles
 $ make run_alertadengue
 ```
-
-Note:
-- *Use the user postgres to configure and restore data in localhost.*
-
